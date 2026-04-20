@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+flask
+easyocr
+opencv-python-headless
+numpy
+Pillow
