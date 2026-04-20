@@ -6,9 +6,10 @@ import numpy as np
 from flask import Flask, request
 from PIL import Image
 import io
-
-# Bot sozlamalari
-TOKEN = "8628693039:AAEBKCGC4gGKxzWhMnffZGRgQ6sPGR3tduw"
+# Tokenlarni Render sozlamalaridan olamiz
+TOKEN = os.environ.get('BOT_TOKEN')
+# Agar Gemini ishlatsangiz:
+# GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
 
